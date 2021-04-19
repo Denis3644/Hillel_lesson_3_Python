@@ -19,7 +19,7 @@ for i in new_number:
         break
 
 print(len(zero))
-
+# Решение вариант 2
 zero_count = len(str(number)) - len(str(int(str(number)[::-1])))
 print(zero_count)
 
@@ -102,7 +102,7 @@ print(res)
 # Если строка содержит нечетное количество символов, пропущенный второй символ последней пары должен
 # быть заменен подчеркиванием ('_'). Примеры: 'abcd' -> ['ab', 'cd'], 'abcde' -> ['ab', 'cd', e_']
 # (используйте срезы длинны 2)
-my_str = "python"
+my_str = "brain"
 if len(my_str) %2:
     my_str += "_"
 result = []
