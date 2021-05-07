@@ -1,81 +1,54 @@
-# standart_dict = {'dict': 1, 'dictionary': 2, 3: "asd"}
-# short = 'dict'
 
-# person = {"name": "Михаил",
-# "возраст": 19}
-#
-# by_type_dict = dict (name = "Михаил", возраст = 19)
 
-# by_type_dict = dict (короткий = короткий, длинный = 'словарь')
-# standart_dict ["key_1"] = "значение_1"
-# print (standart_dict)
+# 1) Дан список словарей persons
+# а) Напечатать имя самого молодого человека. Если возраст совпадает - напечатать все имена.
+# students = [{"name": "John", "age": 23}, {"name": "Jack", "age": 35},{"name": "Sasha", "age": 65}]
+# min_age_list = []
+# for names in students:
+#     min_age_list.append(list(names.values())[1])
+# min_age = min(min_age_list)
+# for names in students:
+#     if list(names.values())[1] == min_age:
+#         print(list(names.values())[0])
+##############################################################################################################
+# б) Напечатать самое длинное имя. Если длина имени совпадает - напечатать все имена.
+# students = [{"name": "John", "age": 23}, {"name": "Jack", "age": 35},{"name": "Sasha", "age": 65}]
+# name_list = []
+# for names in students:
+#     name_list.append(len(list(names.values())[0]))
+#     max_name = max(name_list)
+# for imya in students:
+#      if len(list(imya.values())[0]) == max_name:
+#          print(list(imya.values())[0])
+###############################################################################################################
+# в) Посчитать среднее количество лет всех людей из списка.
+# students = [{"name": "John", "age": 23}, {"name": "Jack", "age": 35},{"name": "Sasha", "age": 65}]
+# name_years_list = []
+# for years in students:
+#     name_years_list.append(list(years.values())[1])
+# summa_year = sum(name_years_list)
+# colvo = len(name_years_list)
+# srednee_2 = summa_year/colvo
+# print(srednee_2)
+########################################################################################################
+# 2) Даны два словаря my_dict_1 и my_dict_2.
+# а) Создать список из ключей, которые есть в обоих словарях.
+# dict_1 = {"Games" : "Xbox","Nintendo" : 360, "VR" : "AR" }
+# dict_2 = {"Games" : "Psp", "Sega" : 180, "VR" : "MR"}
+# result = list(set(dict_1.keys()).intersection(set(dict_2.keys())))
+# print(result)
+########################################################################################################
+# б) Создать список из ключей, которые есть в первом, но нет во втором словаре.
+# dict_1 = {"Games" : "Xbox","Nintendo" : 360, "VR" : "AR", "abc" : 33 }
+# dict_2 = {"Games" : "Psp", "Sega" : 180, "VR" : "MR"}
+# result = list(set(dict_1.keys()).difference(set(dict_2.keys())))
+# print(result)
+########################################################################################################
+# в) Создать новый словарь из пар {ключ:значение}, для ключей, которые есть в первом, но нет во втором словаре.
+# dict_1 = {"Games" : "Psp","Nintendo" : 360, "VR" : "AR", "DD": "CC"}
+# dict_2 = {"Games" : "Psp", "Sega" : 180, "VR" : "AR", "NN":" DDRR"}
+# result = list(set(dict_1.keys()).difference(set(dict_2.keys())))
+# dict_new = {key: value for key, value in dict_1.items() if key in result}
+# print(dict_new)
 
-# list_keys = list ("qwerty")
-# list_values ​​= list ("123456")
 
-# list_keys = ["asd", "zxc", "qwe", "123"]
-# list_values ​​= [1,2,3,4,5,6,7,8,9,]
-#
-# by_zip_dict = dict (zip (list_keys, list_values))
-# печать (by_zip_dict)
-
-# list_keys = ['a', 'b']
-# result = {key: 100 для ключа в list_keys}
-# print (результат)
-
-ascii_table  = { chr ( numb ): numb  for  numb  in  range ( ord ( "a" ), ord ( "z" ) +  1 )}
-# печать (ascii_table)
-# tmp_val = 100 в ascii_table # в проверяето ТОЛЬКО КЛЮЧИ!
-# печать (tmp_val)
-#
-# для ключа в ascii_table: # преребор только КЛЮЧИ
-# print (ключ, ascii_table [ключ])
-
-# new_dict = ascii_table.copy ()
-# new_dict ["test"] = "test"
-# print (new_dict)
-# печать (ascii_table)
-
-# ключ = 100
-# значение = ascii_table.get (ключ)
-# print (значение)
-
-# для ключа, значения в ascii_table.items ():
-# print (ключ, значение)
-
-dict_1  = { 1 : 11 , 2 : 2 , 3 : 33 }
-dict_2  = { 14 : 11 , 24 : 22 , 3 : 11 }
-#
-# result = list (set (dict_1.values ​​()). пересечение (set (dict_2.values ​​())))
-# print (результат)
-
-# ключи = список (ascii_table.keys ())
-# печать (ключи)
-
-# НЕ ИМЕЕТ СМЫСЛА:
-# new_dict = {значение: ключ для ключа, значение в dict_2.items ()}
-# print (new_dict)
-
-# total_dict = dict_1.copy ()
-# total_dict = {}
-# total_dict.update (dict_1)
-# total_dict.update (dict_2)
-# print (total_dict, dict_1)
-
-# total_dict = {** dict_2, ** dict_1}
-# print (total_dict, dict_2)
-
-price_list  = [{ "хлеб" : 10 }, { "вода" : 10 }, { "банан" : 2000 }, { "вода" : 12 }]
-min_value_list  = []
-по  цене  в  price_list :
-    min_value_list . добавить ( список ( цена . значения ()) [ 0 ])
-min_value  =  min ( min_value_list )
-по  цене  в  price_list :
-    если  список ( price . values ()) [ 0 ] ==  min_value :
-        печать ( список ( цена . ключи ()) [ 0 ])
-
-value_list  = {}
-по  цене  в  price_list :
-    список_значений [ список ( цена . значения ()) [ 0 ]] =  список ( цена . ключи ()) [ 0 ]
-min_value  =  min ( список_значений )
-print ( список_значений [ мин ( список_значений )])

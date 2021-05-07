@@ -69,15 +69,15 @@
 ###############################################################################
 # 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 # но в каждой только по одному разу.
-stroka_1 = "aassddssfeuuu"
-stroka_2 = "aaasssssdfe"
-stroka_1_set = set(stroka_1)
-stroka_2_set = set(stroka_2)
-stroka_3 = []
-for index in stroka_1_set.intersection(stroka_2_set):
-    if stroka_1.count(index) == 1 and stroka_2.count(index) == 1:
-        stroka_3.append(index)
-print(stroka_3)
+# stroka_1 = "aassddssfeuuu"
+# stroka_2 = "aaasssssdfe"
+# stroka_1_set = set(stroka_1)
+# stroka_2_set = set(stroka_2)
+# stroka_3 = []
+# for index in stroka_1_set.intersection(stroka_2_set):
+#     if stroka_1.count(index) == 1 and stroka_2.count(index) == 1:
+#         stroka_3.append(index)
+# print(stroka_3)
 
 #######################################################################################
 # 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
